@@ -7,5 +7,5 @@ Run the following command to start the installation
 
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/mariusbreivik/macos-ansible/master/setup.sh)"
-
 ```
+
