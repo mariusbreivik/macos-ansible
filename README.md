@@ -6,6 +6,6 @@ Simple ansible scripts to configure macos as a decent usable developer machine
 Run the following command to start the installation
 
 ```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/mariusbreivik/macos-ansible/master/setup.sh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/mariusbreivik/macos-ansible/master/setup.sh)"
 
 ```
