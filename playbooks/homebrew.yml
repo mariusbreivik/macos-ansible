@@ -1,9 +1,24 @@
 ---
-- name: Check if Homebrew is installed
-  stat:
-    path: /usr/local/bin/brew
-  register: brew
+- hosts: localhost
 
-- name: Install Homebrew
-  shell: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  when: not brew.stat.exists
+  tasks:
+
+  - name: Update and upgrade homebrew
+    homebrew:
+      update_homebrew: yes
+      upgrade_all: yes
+
+  - name: Install golang
+    homebrew:
+      name: go
+      state: present
+
+  - name: Install node
+    homebrew:
+      name: node
+      state: present
+
+  - name: Install maven
+    homebrew:
+      name: maven
+      state: present

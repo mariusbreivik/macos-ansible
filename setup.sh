@@ -16,7 +16,7 @@ else
     echo 'Xcode command line tools already installed' 
 fi
 
-echo 'Checking if homebrew ins installed'
+echo 'Checking if homebrew is installed'
 
 if [ -z $(which brew) ]; then
     echo 'Installing homebrew'
@@ -26,5 +26,13 @@ else
     echo 'homebrew already installed'
 fi
 
+echo 'Checking if ansible is installed'
 
-# install ansible
+if [ -z $(which ansible) ]; then
+    echo 'Installing ansbile'
+    brew install ansible
+fi
+
+
+echo 'let ansible do some magic'
+ansible-playbook playbooks/homebrew.yml
