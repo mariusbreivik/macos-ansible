@@ -4,6 +4,20 @@ set -o errexit
 
 echo 'Starting installation'
 
+WORKDIR=~/.personal_setup
+
+if [ ! -n "$WORKDIR"] ; then
+	WORKDIR=~/.personal_setup
+fi
+
+if [ -d "$WORKDIR" ]; then
+	rm -rf $WORKDIR
+fi
+
+wget https://github.com/mariusbreivik/macos-ansible/archive/master.zip -P $WORKDIR
+cd $WORKDIR
+unzip -o master.zip
+
 echo 'Checking if xcode command line tools is installed'
 if [ ! xcode-select --print-path &> /dev/null ]; then
     echo 'Installing Xcode command line tools'
