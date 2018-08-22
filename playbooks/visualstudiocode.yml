@@ -1,3 +1,11 @@
 ---
 # work in progress
-# code --install-extension ms-vscode.cpptools
+
+#install visual studio code
+
+# extensions to install
+#code --install-extension HookyQR.beautify
+#code --install-extension mikestead.dotenv
+#code --install-extension ms-vscode.Go
+#code --install-extension PeterJausovec.vscode-docker
+#code --install-extension vscoss.vscode-ansible
