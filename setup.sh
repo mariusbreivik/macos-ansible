@@ -6,17 +6,18 @@ echo 'Starting installation'
 
 WORKDIR=~/.personal_setup
 
-if [ ! -n "$WORKDIR"] ; then
-	WORKDIR=~/.personal_setup
+if [ -d $WORKDIR ]; then
+    echo $WORKDIR ' already exslists. Deleting content...'    
+	rm -rf $WORKDIR/*
+else
+    mkdir -p $WORKDIR
 fi
 
-if [ -d "$WORKDIR" ]; then
-	rm -rf $WORKDIR
-fi
+curl https://github.com/mariusbreivik/macos-ansible/archive/master.zip -J -L --create-dirs -o $WORKDIR/master.zip
 
-wget https://github.com/mariusbreivik/macos-ansible/archive/master.zip -P $WORKDIR
 cd $WORKDIR
-unzip -o master.zip
+
+tar xvzf master.zip --strip=1
 
 echo 'Checking if xcode command line tools is installed'
 if [ ! xcode-select --print-path &> /dev/null ]; then
