@@ -22,8 +22,8 @@
     homebrew:
       name: maven
       state: present
-
-  - name: Install Visual Studio Code
+      
+  - name: Install tmux
     homebrew: 
-      name: visual-studio-code
+      name: tmux
       state: present
