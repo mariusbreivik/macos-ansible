@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+
+  tasks:
+  - name: Clone oh-my-zsh repository
+    git:
+      repo: https://github.com/robbyrussell/oh-my-zsh.git
+      dest: "{{ ansible_env.HOME }}/.oh-my-zsh"
+      accept_hostkey: yes
+      update: yes
