@@ -50,4 +50,4 @@ fi
 
 
 echo 'let ansible do some magic'
-ansible-playbook playbooks/homebrew.yml
+ansible-playbook install.yml
