@@ -17,4 +17,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/mariusbreivik/macos-ansibl
 - maven
 - node
 - tmux
+- fzf
+- zsh-autosuggestions
+- zsh-syntax-highlighting
 
