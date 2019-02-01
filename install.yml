@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  
+- import_playbook: tasks/general.yml
+- import_playbook: tasks/homebrew.yml
+- import_playbook: tasks/oh-my-zsh.yml
