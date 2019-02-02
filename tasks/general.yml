@@ -8,3 +8,19 @@
       name: "{{ ansible_env.USER }}"
       shell: /bin/zsh
 
+  - name: Clone dotfiles
+    git:
+      repo: git@github.com:mariusbreivik/dotfiles.git
+      dest: "{{ ansible_env.HOME }}/.dotfiles"
+      accept_hostkey: true
+
+  - name: Link dotfiles into home folder.
+    file:
+      src: "{{ ansible_env.HOME }}/.dotfiles/{{ item }}"
+      dest: "{{ ansible_env.HOME }}/{{ item }}"
+      state: link
+      force: yes
+    with_items:
+      - .zshrc
+      - .vimrc
+      - .gitconfig
