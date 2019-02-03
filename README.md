@@ -14,6 +14,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/mariusbreivik/macos-ansibl
 - homebrew
 - ansible
 - golang
+- openjdk
 - maven
 - node
 - tmux
