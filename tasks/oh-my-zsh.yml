@@ -8,3 +8,4 @@
       dest: "{{ ansible_env.HOME }}/.oh-my-zsh"
       accept_hostkey: yes
       update: yes
+      force: true
