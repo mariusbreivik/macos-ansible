@@ -42,3 +42,8 @@
     homebrew:
       name: zsh-syntax-highlighting
       state: present
+
+  - name: Install openjdk
+    homebrew_cask:
+      name: java
+      state: present

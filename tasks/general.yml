@@ -13,6 +13,7 @@
       repo: git@github.com:mariusbreivik/dotfiles.git
       dest: "{{ ansible_env.HOME }}/.dotfiles"
       accept_hostkey: true
+      force: yes
 
   - name: Link dotfiles into home folder.
     file:
