@@ -47,3 +47,8 @@
     homebrew_cask:
       name: java
       state: present
+
+  - name: Install The Silver searcher
+    homebrew_cask:
+      name: the_silver_searcher
+      state: present
