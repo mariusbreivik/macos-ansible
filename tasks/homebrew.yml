@@ -54,6 +54,6 @@
       state: present
 
   - name: Install htop
-    homebrew_cask:
+    homebrew:
       name: htop
       state: present
