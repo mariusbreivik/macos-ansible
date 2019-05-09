@@ -22,4 +22,5 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/mariusbreivik/macos-ansibl
 - zsh-autosuggestions
 - zsh-syntax-highlighting
 - the silver searcher
+- htop
 
