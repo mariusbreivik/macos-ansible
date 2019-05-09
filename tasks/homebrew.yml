@@ -49,7 +49,7 @@
       state: present
 
   - name: Install The Silver searcher
-    homebrew_cask:
+    homebrew:
       name: the_silver_searcher
       state: present
 
