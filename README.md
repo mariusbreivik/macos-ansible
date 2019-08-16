@@ -19,6 +19,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/mariusbreivik/macos-ansibl
 - node
 - tmux
 - fzf
+- tree
 - zsh-autosuggestions
 - zsh-syntax-highlighting
 - the silver searcher

@@ -33,6 +33,11 @@
       name: fzf
       state: present
 
+  - name: Install tree
+    homebrew:
+      name: tree
+      state: present
+
   - name: Install zsh-autosuggestions
     homebrew:
       name: zsh-autosuggestions
@@ -43,12 +48,17 @@
       name: zsh-syntax-highlighting
       state: present
 
-  - name: Install openjdk
+  - name: Install openjdk11
     homebrew_cask:
-      name: java
+      name: adoptopenjdk11
       state: present
 
-  - name: Install The Silver searcher
+  - name: Install openjdk12
+    homebrew_cask:
+      name: adoptopenjdk12
+      state: present
+
+  - name: Install The Silver searcher(ag)
     homebrew:
       name: the_silver_searcher
       state: present
