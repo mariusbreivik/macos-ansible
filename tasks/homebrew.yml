@@ -48,11 +48,6 @@
       name: zsh-syntax-highlighting
       state: present
 
-  - name: Install openjdk11
-    homebrew_cask:
-      name: adoptopenjdk11
-      state: present
-
   - name: Install openjdk12
     homebrew_cask:
       name: adoptopenjdk12
