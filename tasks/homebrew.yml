@@ -18,6 +18,11 @@
       name: node
       state: present
 
+  - name: Install nvm
+      homebrew:
+        name: nvm
+        state: present
+
   - name: Install maven
     homebrew:
       name: maven
